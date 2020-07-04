@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Contact App</title>
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- star header  -->
+      <header>
+        <h1 class="text-capitalize text-center mt-4">
+          <i class="ion-person-stalker"></i> my contact
+        </h1>
+      </header>
+      <!-- end header  -->
+
+      <!-- star form -->
+      <form id="form-group">
+        <label for="name" class="text-capitalize">name</label>
+        <input type="text" id="name" class="form-control" />
+        <label for="number" class="text-capitalize">number</label>
+        <input type="text" id="number" class="form-control" />
+        <input
+          type="submit"
+          id="submit"
+          class="form-control btn btn-primary mt-4"
+          value="save contact"
+        />
+      </form>
+      <!-- end form -->
+
+      <!-- search contact  -->
+      <input
+        type="text"
+        id="filter-input"
+        placeholder="search contact"
+        class="form-control mt-4"
+      />
+      <!-- search contact  -->
+
+      <!-- star table of contact -->
+      <table class="table table-striped text-capitalize text-center mt-5">
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>number</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody id="contact-list"></tbody>
+      </table>
+      <!-- end table of contact -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
